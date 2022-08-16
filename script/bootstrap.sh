@@ -124,7 +124,11 @@ install_dotfiles () {
 setup_gitconfig
 install_dotfiles
 
+info "Setting up aliases file"
+sleep 1
 touch ~/.bash_aliases
+cp ~/.bash_aliases ~/.bash_aliases.backup
+cat /dev/null > ~/.bash_aliases
 
 echo ''
 echo '  All installed!'
