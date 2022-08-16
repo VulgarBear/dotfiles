@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 #
 # Installs docker.
+# Setup
 
+# Setup
+set -e
+
+echo ''
+
+sources "$HOME/.dotfiles/utils/logging_utils.sh"
+
+#Script Start
 info 'Installing docker...'
 
 sudo apt update
