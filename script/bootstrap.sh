@@ -6,7 +6,7 @@
 
 set -e
 
-sources "$HOME/.dotfiles/utils/logging_utils.sh"
+source "$HOME/.dotfiles/utils/logging_utils.sh"
 
 echo ''
 
