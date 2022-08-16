@@ -130,7 +130,7 @@ touch ~/.bash_aliases
 cp ~/.bash_aliases ~/.bash_aliases.backup
 cat /dev/null > ~/.bash_aliases
 
-./$DOTFILES_ROOT/script/install.sh
+sh $DOTFILES_ROOT/script/install.sh
 
 echo ''
 echo '  All installed!'
