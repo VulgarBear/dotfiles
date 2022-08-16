@@ -5,7 +5,7 @@
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
 echo ${DOTFILES_ROOT}
-chmod +x ${DOTFILES_ROOT}/*
+chmod +x "${DOTFILES_ROOT}/*"
 exit
 
 set -e
