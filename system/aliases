@@ -1,5 +1,7 @@
 # System Specfic aliases
 
 alias gs='git stash'
-alias gp='git pull'
+alias gc='git commit'
+alias gpull='git pull'
+alias gpush='git push'
 alias ls='exa'
