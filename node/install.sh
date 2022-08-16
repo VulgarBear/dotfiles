@@ -45,4 +45,11 @@ if [ ! -d "$NVM_DIR" ]; then
 fi
 
 echo ' '
+info 'Installing Yarn'
+sleep 1
+
+source ~/.bashrc
+npm i -g yarn
+
+echo ' '
 success 'NVM Installation and Node LTS Complete...'
