@@ -14,16 +14,16 @@ source "$HOME/.dotfiles/utils/logging_utils.sh"
 info 'Installing docker...'
 
 sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" -y
 
 echo ' '
 info 'Verifying Pulling from Docker Repo...'
 apt-cache policy docker-ce
 sleep 3
 
-sudo apt install docker-ce
+sudo apt install docker-ce -y
 
 echo ' '
 info 'Verifying Docker is installed...'
@@ -34,5 +34,6 @@ echo ' '
 info 'Adding user to Docker group...'
 sudo usermod -aG docker vulgarbear
 
+#Script End
 echo ' '
 success 'Docker install compelted...'
