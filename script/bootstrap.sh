@@ -124,5 +124,7 @@ install_dotfiles () {
 setup_gitconfig
 install_dotfiles
 
+touch ~/.bash_aliases
+
 echo ''
 echo '  All installed!'
