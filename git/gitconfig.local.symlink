@@ -1,0 +1,5 @@
+[user]
+        name = vulgarbear
+        email = lucas@shisify.com
+[credential]
+        helper = cache
