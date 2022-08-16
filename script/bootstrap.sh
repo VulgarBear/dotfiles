@@ -4,6 +4,8 @@
 
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
+echo ${DOTFILES_ROOT}
+exit
 
 set -e
 
