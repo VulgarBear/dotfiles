@@ -6,8 +6,6 @@
 
 set -e
 
-DOTFILES="$HOME/.dotfiles"
-
 # Script Start
 
 read -e -p "

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+# Remove Python Environment
+
+# Setup
+
+set -e
+
+# Script Start
+cd ${HOME}/.dotfiles
+git pull
+
+echo "Updates Completed"

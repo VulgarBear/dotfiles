@@ -6,8 +6,6 @@
 
 set -e
 
-DOTFILES="$HOME/.dotfiles"
-
 # Script Start
 
 [[ ! -d "${HOME}/python_env" ]] && mkdir "${HOME}/python_env"
