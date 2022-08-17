@@ -7,6 +7,7 @@
 set -e
 
 source "$HOME/.dotfiles/utils/logging_utils.sh"
+DOTFILES="$HOME/.dotfiles"
 
 echo ''
 
