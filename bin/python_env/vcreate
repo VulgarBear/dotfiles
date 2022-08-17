@@ -13,7 +13,7 @@ DOTFILES="$HOME/.dotfiles"
 [[ ! -d "${HOME}/python_env" ]] && mkdir "${HOME}/python_env"
 ENV_PATH="$HOME/python_env/"
 
-ead -e -p "
+read -e -p "
 Do you wish to create $1 ? [Y/n] " YN
 
 [[ $YN == "y" || $YN == "Y" || $YN == "" ]] && python3 -m venv $ENV_PATH/$1
