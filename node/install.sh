@@ -9,6 +9,10 @@ echo ''
 source "$HOME/.dotfiles/utils/logging_utils.sh"
 
 # Script Start
+read -e -p "
+Do you wish to install Node/NVM ? [Y/n] " YN
+
+[[ $YN == "n" || $YN == "N" || $YN == "" ]] && exit
 
 info 'Node Version Manager Installation'
 sleep 1

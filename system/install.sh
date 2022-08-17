@@ -12,6 +12,11 @@ source "$HOME/.dotfiles/utils/logging_utils.sh"
 DOTFILES="$HOME/.dotfiles"
 
 #Script Start
+read -e -p "
+Do you wish to install system tools ? [Y/n] " YN
+
+[[ $YN == "n" || $YN == "N" || $YN == "" ]] && exit
+
 echo ''
 info "Beginning system tool installations..."
 sleep 1

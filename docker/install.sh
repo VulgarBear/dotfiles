@@ -11,6 +11,11 @@ echo ''
 source "$HOME/.dotfiles/utils/logging_utils.sh"
 
 #Script Start
+read -e -p "
+Do you wish to install docker ? [Y/n] " YN
+
+[[ $YN == "n" || $YN == "N" || $YN == "" ]] && exit
+
 info 'Installing docker...'
 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
