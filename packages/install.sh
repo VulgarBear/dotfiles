@@ -86,7 +86,7 @@ case "$apt_answer" in
 y | Y | yes | Yes)
 	info "Installing packages..."
 	install_packages
-  snap install bashtop
+  	sudo snap install bashtop
 	;;
 n | N | no | No)
 	info "Skipping package installation"
