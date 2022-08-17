@@ -3,6 +3,7 @@
 # Remove Python Environment
 
 # Setup
+ENV_PATH="$HOME/python_env/$1/bin/activate"
 
 set -e
 
