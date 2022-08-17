@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# Remove Python Environment
+
+# Setup
+
+set -e
+
+DOTFILES="$HOME/.dotfiles"
+
+# Script Start
+
+read -e -p "
+Do you wish to activate $1 ? [Y/n] " YN
+
+[[ $YN == "y" || $YN == "Y" || $YN == "" ]] && bash --rcfile $ENV_PATH -i

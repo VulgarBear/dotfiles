@@ -132,5 +132,14 @@ cat /dev/null > ~/.bash_aliases
 
 sh $DOTFILES_ROOT/script/install.sh
 
+info 'Finishing up...'
+sleep 1
+
+ln -s ${HOME}/.dotfiles/bin/* ${HOME}/bin
+
+dos2unix -q $DOTFILES/extras/path
+dos2unix -q -F $HOME/bin/*
+dos2unix -q -F $HOME/bin/python_env/*
+
 echo ''
 echo '  All installed!'

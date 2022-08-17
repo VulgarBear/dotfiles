@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# Remove Python Environment
+
+# Setup
+
+set -e
+
+DOTFILES="$HOME/.dotfiles"
+
+# Script Start
+
+read -e -p "
+Do you wish to remove $1 ? [Y/n] " YN
+
+[[ $YN == "y" || $YN == "Y" || $YN == "" ]] && rm -rf $ENV_PATH/$1
