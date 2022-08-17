@@ -56,8 +56,6 @@ function install_dev_packages() {
 	if [ -f "${DOTFILES}/packages/dev_packages.txt" ]; then
 		success "Found Packages list. Installing..."
 		if ! dpkg-query -W -f='${Status} ${Version}\n' dos2unix | grep "^install ok" >/dev/null; then
-			info "Installing package dos2unix for formating "
-			sudo apt -y install dos2unix
 			dos2unix -q ${DOTFILES}/packages/dev_packages.txt
 			info "dev_packages.txt file formatted"
 		else
