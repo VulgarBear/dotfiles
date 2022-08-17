@@ -141,5 +141,9 @@ dos2unix -q $DOTFILES/extras/path
 dos2unix -q -F $HOME/bin/*
 dos2unix -q -F $HOME/bin/python_env/*
 
+cp ~/.bashrc ~/.bashrc.backup
+cat $DOTFILES/extras/path >> ~/.bashrc
+	source ~/.bashrc
+
 echo ''
 echo '  All installed!'
