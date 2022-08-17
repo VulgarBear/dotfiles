@@ -64,8 +64,8 @@ function install_dev_packages() {
 		fi
 	fi
 	##	Looks for a list of default packages to install
-	if [ -f "${DOTFILES_LISTS}/dev_packages.txt" ]; then
-		for i in $(cat ${DOTFILES_LISTS}/dev_packages.txt); do
+	if [ -f "${DOTFILES}/packages/dev_packages.txt" ]; then
+		for i in $(cat ${DOTFILES}/packages/dev_packages.txt); do
 			if ! dpkg-query -W -f='${Status} ${Version}\n' ${i} | grep "^install ok" >/dev/null; then
 				info "Installing package ${i} "
 				sudo apt -y install ${i}
