@@ -8,5 +8,6 @@ cd "$(dirname $0)"/..
 
 # Run Installers
 ./docker/install.sh
-./system/install.sh
+./packages/install.sh
 ./node/install.sh
+./system/install.sh
